@@ -23,19 +23,36 @@ wkon: easy keep track of what you are working on
 USAGE:
   $ wkon [message] # appends [message] to WORKING-ON.txt and displays it's content
 
-  Use $WKON_FILE to save in a custom file. Defatul: "WORKING-ON.txt"
+CONFIGURATION:
+  Use $WKON_FILE to save to a custom file. Defatul: "WORKING-ON.txt"
 
 OPTIONS:
   -h, --help    show help
   -d, --delete  remove WORKING-ON.txt
 ```
 
+To generate the file for the first time you have to pass a message, otherwise `wkon` will do nothing:
+
 ```bash
 $ wkon
-$ wkon '- clean up src/foo/bar.js'
+
+$ wkon take out the trash
 ----- WORKING ON: -----
-- clean up src/foo/bar.js
+
+take out the trash
+```
+
+When the file has be generated `wkon` will the message in a new line (if provided) and show you the updated notes:
+```bash
 $ wkon
 ----- WORKING ON: -----
-- clean up src/foo/bar.js
+
+take out the trash
+
+$ wkon finish ticket 123
+----- WORKING ON: -----
+
+take out the trash
+finish ticket 123
+
 ```
