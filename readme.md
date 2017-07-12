@@ -31,7 +31,11 @@ OPTIONS:
 ```
 
 ```bash
+$ wkon
 $ wkon '- clean up src/foo/bar.js'
+----- WORKING ON: -----
+- clean up src/foo/bar.js
+$ wkon
 ----- WORKING ON: -----
 - clean up src/foo/bar.js
 ```
