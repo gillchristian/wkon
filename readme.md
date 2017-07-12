@@ -5,7 +5,7 @@ Bash utility to keep track of what you are working, directory based.
 ## Install
 
 ```bash
-$ curl https://raw.githubusercontent.com/gillchristian/wkon/master/wkon.sh > ~/.zshrc
+$ curl https://raw.githubusercontent.com/gillchristian/wkon/master/wkon.sh >> ~/.zshrc
 ```
 
 Or you can copy the script from [here](https://raw.githubusercontent.com/gillchristian/wkon/master/wkon.sh) and paste it in your profile file of choice (`.bashrc`, `.profile`, `.zshrc`).
