@@ -9,8 +9,8 @@ $ antigen bundle gillchristian/wkon
 ```
 
 Alternatively you can copy the script from
-[here](https://raw.githubusercontent.com/gillchristian/wkon/master/wkon.sh) and
-paste it in your profile file of choice (`.bashrc`, `.profile`, `.zshrc`).
+[here](https://raw.githubusercontent.com/gillchristian/wkon/master/wkon.plugin.zsh)
+and paste it in your profile file of choice (`.bashrc`, `.profile`, `.zshrc`).
 
 ## Use
 
