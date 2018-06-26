@@ -13,6 +13,12 @@ function wkon () {
     return;
   fi
 
+  # -e, --edit flag
+  if [ "$1" == "-e" ] || [ "$1" == "--edit" ] ; then
+    $EDITOR $file;
+    return;
+  fi
+
   # -h, --help flag
   if [ "$1" == "-h" ] || [ "$1" == "--help" ] ; then
     printf "wkon: easily keep track of what you are working on\n\n";
@@ -22,8 +28,9 @@ function wkon () {
     printf "CONFIGURATION:\n";
     printf "  \$WKON_FILE defaults to \"WORKING-ON.txt\", change it to use a different file.\n\n";
     printf "OPTIONS:\n";
-    printf "  -h, --help    show help\n";
+    printf "  -e, --edit    open \$WKON_FILE in \$EDITOR\n";
     printf "  -d, --delete  removes \$WKON_FILE\n";
+    printf "  -h, --help    show help\n";
 
     return;
   fi
